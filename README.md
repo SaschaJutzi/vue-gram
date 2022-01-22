@@ -1,24 +1,14 @@
 # vue-gram
 
-## Project setup
+## Project is based on Net Ninja Repo "vue-gram"
+
 ```
-npm install
+### with new features
+
 ```
 
-### Compiles and hot-reloads for development
-```
-npm run serve
+upgraded to Firebase 9
+
 ```
 
-### Compiles and minifies for production
 ```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
