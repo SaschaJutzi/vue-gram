@@ -1,8 +1,8 @@
 <template>
   <div class="title">
-    <h1>myPhotoGallery</h1>
-    <p>by Sascha Jutzi</p>
-    <p>Barista | Coder | Active Dad</p>
+    <h1>VueGram</h1>
+    <p>Sascha Jutzi</p>
+    <p>Hobby Coder | Barista | just started painting...</p>
   </div>
 </template>
 

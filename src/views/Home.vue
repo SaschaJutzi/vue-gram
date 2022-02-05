@@ -1,7 +1,7 @@
 <template>
-  <div class="App">
+  <div>
     <Title />
-    <UploadForm />
+    <UploadForm v-if="user" />
     <ImageGrid @selected="updateSelectedImgUrl" />
     <Modal
       v-if="selectedImgUrl"
@@ -17,6 +17,7 @@ import Title from '@/components/Title.vue'
 import UploadForm from '@/components/UploadForm.vue'
 import Modal from '@/components/Modal.vue'
 import { ref } from '@vue/reactivity'
+import getUser from '../composables/getUser'
 
 export default {
   components: {
@@ -26,6 +27,8 @@ export default {
     Modal,
   },
   setup() {
+    const { user } = getUser()
+
     const selectedImgUrl = ref(null)
 
     const updateSelectedImgUrl = (url) => {
@@ -33,7 +36,7 @@ export default {
       console.log(selectedImgUrl.value)
     }
 
-    return { selectedImgUrl, updateSelectedImgUrl }
+    return { selectedImgUrl, updateSelectedImgUrl, user }
   },
 }
 </script>
