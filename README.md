@@ -5,7 +5,9 @@
 ### with new features
 
 ```
-
 upgraded to Firebase 9
 
+login and auth
+
+responsive design
 ```

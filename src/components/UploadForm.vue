@@ -45,7 +45,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 form {
   margin: 30px auto 10px;
   text-align: center;
