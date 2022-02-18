@@ -7,7 +7,7 @@
 ```
 upgraded to Firebase 9
 
-login
+login and auth
 
 responsive design
 ```

@@ -3,11 +3,11 @@ node_modules
 /dist
 
 # Local firestore files
-/.firebase
+.firebase
 /src/firebase
-/.firebaserc
+.firebaserc
 firebase.json
-/firestore.indexes.json
+firestore.indexes.json
 firestore.rules
 storage.rules
 
