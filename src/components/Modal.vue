@@ -39,12 +39,25 @@ export default {
 
 /*transition classes */
 .image-enter-from {
-  bottom: -200%;
+  opacity: 0;
 }
 .image-enter-to {
-  bottom: 0;
+  opacity: 1;
 }
 .image-enter-active {
-  transition: all ease-in-out 0.5s;
+  transition: all 0.5s ease;
+}
+
+/* large tablet & laptop styles */
+@media screen and (min-width: 960px) {
+  .image-enter-from {
+    bottom: -200%;
+  }
+  .image-enter-to {
+    bottom: 0;
+  }
+  .image-enter-active {
+    transition: all ease-in-out 0.5s;
+  }
 }
 </style>
