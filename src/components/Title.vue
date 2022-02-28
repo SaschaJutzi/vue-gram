@@ -1,8 +1,8 @@
 <template>
   <div class="title">
-    <h1>VueGram</h1>
+    <h1>myGallery</h1>
     <p>Sascha Jutzi</p>
-    <p>Hobby Coder | Barista | just started painting...</p>
+    <p>hobby coder | barista | just started painting...</p>
   </div>
 </template>
 

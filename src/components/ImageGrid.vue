@@ -32,7 +32,14 @@ export default {
   margin: 20px auto;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 40px;
+  grid-gap: 20px;
+}
+
+/* large tablet & laptop styles */
+@media screen and (min-width: 960px) {
+  .img-grid {
+    grid-gap: 40px;
+  }
 }
 
 .img-wrap {
@@ -50,6 +57,7 @@ export default {
   position: absolute;
   top: 0;
   left: 0;
+  cursor: pointer;
 }
 
 /* transition classes */
