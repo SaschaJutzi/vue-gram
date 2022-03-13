@@ -6,23 +6,35 @@
       class="img-wrap"
       @click="handleClick(img.url)"
     >
-      <img :src="img.url" />
+      <img :src="img.url" @load="loading" v-show="isLoaded" />
+      <Spinner v-if="!isLoaded" />
     </div>
   </transition-group>
 </template>
 
 <script>
+import { ref } from 'vue'
 import getCollection from '../composables/getCollection'
+import Spinner from './Spinner.vue'
 
 export default {
+  components: {
+    Spinner,
+  },
   setup(props, context) {
+    const isLoaded = ref(false)
+
+    const loading = () => {
+      isLoaded.value = true
+    }
+
     const { documents: images } = getCollection('images')
 
     const handleClick = (url) => {
       context.emit('selected', url)
     }
 
-    return { images, handleClick }
+    return { images, handleClick, loading, isLoaded }
   },
 }
 </script>
